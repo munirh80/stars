@@ -1,0 +1,189 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark gray text color */
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #333; /* Dark background */
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navbar .logo {
+    color: #fff; /* White text color for logo */
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar .nav-links li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+}
+
+/* Search form styles */
+.search-form {
+    display: inline-block;
+    margin-left: auto;
+}
+
+.search-form input[type="text"],
+.search-form button {
+    padding: 10px;
+}
+
+.search-form input[type="text"] {
+    width: 200px;
+}
+
+.search-form button {
+    background-color: #555; /* Dark gray button */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero section styles */
+.hero {
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your actual background image */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+#dreamBtn {
+    background-color: #555; /* Dark gray button */
+    color: #fff; /* White text color */
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dreamBtn:hover {
+    background-color: #333; /* Darker gray on hover */
+}
+
+#dreamInput {
+    width: 80%;
+    min-height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* How it works section styles */
+.how-it-works {
+    background-color: #fff; /* White background */
+    padding: 100px 0;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.step {
+    text-align: center;
+    flex: 0 1 30%;
+}
+
+.step img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Success stories section styles */
+.success-stories {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 100px 0;
+}
+
+.success-stories h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-links li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .search-form {
+        display: none;
+    }
+}
